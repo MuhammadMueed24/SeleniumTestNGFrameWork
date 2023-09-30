@@ -29,7 +29,6 @@ Configurations:
 - ExcelSheet: Contains methods to update test status in Excel Sheet.
 - ExtentReports: Contains directory and implementation of Spark Reports.
 - Listeners: Listens to the execution of test cases.
-- Rerun_Testcase: Reruns failed test cases to check for flakiness.
 - Snap_Function: Contains screenshot methods.
 - Webdriver: Contains WebDriver implementation.
 
