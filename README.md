@@ -25,33 +25,28 @@ The framework follows the Page Object Pattern, which enhances code reusability a
 # Hierarchy
 ```
 src/main/java:
+BaseClass:
+- Base
+
 Configurations:
-- ExcelSheet: Contains methods to update test status in Excel Sheet.
+- Config.properties Contains URL and browser name configurations.
 - ExtentReports: Contains directory and implementation of Spark Reports.
 - Listeners: Listens to the execution of test cases.
 - Snap_Function: Contains screenshot methods.
-- Webdriver: Contains WebDriver implementation.
 
-src/test/java:
-Helpers:
-- Helpers_StarzPlay: Contains shared functions specific to Starz Play webpages.
-- Helpers: Contains shared functions used throughout the project.
+Util:
+- Helpers: Contains shared functions specific to Starz Play webpages.
+- RandomEmailPasswordGen: Contains shared functions used throughout the project.
+
+src/test/java
 
 Page_Object:
 - LoginPage: Contains locators and methods for the Starz Play login page.
 - SignupPage: Contains locators and methods for the Starz Play signup page.
-
+- HomePage: Contains locators and methods for the Starz Play Main page.
 test_Cases:
-- SignUp: Contains test cases for signing up on Starz Play.
-- Login: Contains test cases for logging in to Starz Play.
+- SignUpAndLoginTest: Contains test cases for signing up and Login on Starz Play.
 
-test_Data (Using Data Providers):
-- Td_SignUp: Contains test data for the Starz Play signup page.
-- Td_Login: Contains test data for the Starz Play login page.
-
-src/test/resources:
-- Data.properties: Contains URL and browser name configurations.
-- Test_Sheet.xlsx: Contains method names and execution results.
 
 Implementation of Reporting:
 - The framework generates three types of reports: Spark Reports, TestNG reports, and Excel sheet results. To view Spark Reports, simply     open the provided HTML file.
@@ -61,7 +56,6 @@ Screenshots:
 
 Error Handling:
 - If a test case fails, the framework captures the exception and attaches the corresponding screenshot in the Spark Reporter.       
-  Additionally, the framework reruns the failed test case three times to identify any flakiness issues.
 
 Supported Browsers:
 The framework supports three browsers: Chrome, Edge, and Firefox. The default browser is Microsoft Edge, but you can modify the browser selection in the data.properties file under src/test/resources.
@@ -83,7 +77,7 @@ Automated Test Cases:
 The following test cases have been automated:
 
 - SignUp_TC01: Verify successful sign-up on Starz Play.
-- Login_TC01: Verify successful login to Starz Play.
+- Login_TC02: Verify successful login to Starz Play.
   We hope this framework provides a robust and efficient way to automate test cases for the Starz Play application. Feel free to explore    and contribute to its development!
 
 Happy Testing!
