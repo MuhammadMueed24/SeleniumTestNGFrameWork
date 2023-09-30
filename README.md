@@ -35,7 +35,7 @@ Configurations:
 
 Util:
 - Helpers: Contains shared functions specific to Starz Play webpages.
-- RandomEmailPasswordGen: Contains shared functions used throughout the project.
+- RandomEmailPasswordGen: Methods to generate random email and password on run time.
 
 src/test/java
 
