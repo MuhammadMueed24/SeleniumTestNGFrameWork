@@ -23,6 +23,7 @@ Maven is utilized as the project and dependency management tool to simplify the 
 The framework follows the Page Object Pattern, which enhances code reusability and maintainability by separating the page structure from the test code.
 
 # Hierarchy
+```
 src/main/java:
 Configurations:
 - ExcelSheet: Contains methods to update test status in Excel Sheet.
@@ -37,7 +38,7 @@ Helpers:
 - Helpers_StarzPlay: Contains shared functions specific to Starz Play webpages.
 - Helpers: Contains shared functions used throughout the project.
 
-# Page_Object:
+Page_Object:
 - LoginPage: Contains locators and methods for the Starz Play login page.
 - SignupPage: Contains locators and methods for the Starz Play signup page.
 
