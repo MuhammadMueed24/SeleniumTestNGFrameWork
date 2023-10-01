@@ -7,8 +7,7 @@ Ensure that Java is installed on your machine.
 Set up Eclipse and install TestNG tool using the Eclipse Marketplace.
 Open Eclipse and click on "File" > "Open Projects from File System" > Click "Directory" button > Navigate to your project > Select the folder > Finish.
 Maven will automatically install the necessary dependencies for the automation framework.
-Assertions
-Assertions are applied throughout the framework to validate expected outcomes. However, due to the dynamic nature of numeric values, assertions are primarily applied to static text. In order to apply assertions to numeric values, APIs would be required to retrieve fresh input for comparison.
+Assertions are applied throughout the framework to validate expected outcomes. However, due to the dynamic nature of numeric values, assertions are primarily applied to static text.
 
 # Locators
 The framework prioritizes using ID as the primary locator, but custom CSS selectors and XPath are utilized when ID is not available. This approach ensures effective element identification even when class names are commonly used.
@@ -36,7 +35,7 @@ Configurations:
 
 Util:
 - Helpers: Contains shared functions specific to Starz Play webpages.
-- RandomEmailPasswordGen: Contains shared functions used throughout the project.
+- RandomEmailPasswordGen: Methods to generate random email and password on run time.
 
 src/test/java
 
