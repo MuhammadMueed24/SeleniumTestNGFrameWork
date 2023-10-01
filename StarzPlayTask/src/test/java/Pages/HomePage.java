@@ -14,7 +14,7 @@ public class HomePage extends Base {
     }
 
     // Locator for Subscription Message
-    By SubscriptionMsg = By.xpath("//li[contains(text(),'No commitments, cancel anytime')]");
+    By SubscriptionMsg = By.xpath("//h1[text()='Choose your subscription']");
 
     // Method to return the WebElement for Subscription Message
     public WebElement SubscriptionMsg() {
