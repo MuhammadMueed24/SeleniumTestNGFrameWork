@@ -51,7 +51,7 @@ public class SignUpAndLoginTest extends Base {
 		lg.LoginBtn().click();
 		utilMethods.waitForElementToBeVisible(getDriver(), hp.SubscriptionMsg());
 //		Assert.assertTrue(hp.SubscriptionMsg().isDisplayed());
-		utilMethods.waitForElementToBeClickable(getDriver(), hp.starzPlayLogo());
+		Thread.sleep(2000);
 		hp.starzPlayLogo().click();
 		utilMethods.waitForElementToBeVisible(getDriver(), hp.navbar());
 		hp.SettingIcon().click();
