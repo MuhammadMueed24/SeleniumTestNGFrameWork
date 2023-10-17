@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -21,7 +22,7 @@ public class Base {
 
     @Parameters("browserName")
     @BeforeMethod(alwaysRun = true)
-    public void setup(String browserName) throws IOException {
+    public void setup(@Optional("Chrome") String browserName) throws IOException {
         // Initialize properties to read configuration settings
         prop = new Properties();
         FileInputStream fis = new FileInputStream(
