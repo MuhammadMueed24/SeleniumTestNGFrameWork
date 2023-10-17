@@ -14,7 +14,7 @@ public class HomePage extends Base {
     }
 
     // Locator for Subscription Message
-    By SubscriptionMsg = By.xpath("//li[contains(text(),'No commitments, cancel anytime')]");
+    By SubscriptionMsg = By.xpath("//h1[contains(text(),'Choose your subscription')]");
 
     // Method to return the WebElement for Subscription Message
     public WebElement SubscriptionMsg() {
@@ -46,7 +46,7 @@ public class HomePage extends Base {
     }
 
     // Locator for Logout Link
-    By Logout = By.xpath("//ul[@id=\"dropDownUser\"]/li[3]/a");
+    By Logout = By.xpath("//ul[@id='dropDownUser']/li[4]/a");
 
     // Method to return the WebElement for Logout Link
     public WebElement Logout() {
